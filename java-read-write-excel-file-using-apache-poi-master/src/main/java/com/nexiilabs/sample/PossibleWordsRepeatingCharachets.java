@@ -9,8 +9,8 @@ public class PossibleWordsRepeatingCharachets {
 		 
 		char[] ch=str.toCharArray();
 		
-		String resultString=null;
-		String res=null;
+		String resultString="";
+		String res="";
 		int a=0;
 		int b=0;
 		for(int i=0;i<str.length();i++) {
@@ -18,12 +18,12 @@ public class PossibleWordsRepeatingCharachets {
 			if(ch[i]==ch[j]) {
 				
 				res=str.subSequence(i, j).toString();
-				resultString=resultString+","+res+ch[i];
+				resultString=resultString+" "+res+ch[i];
 			}
 			}
 			
 		}
-		System.out.println("resultString::::");
+	
 		System.out.println(resultString);
 		
 		
