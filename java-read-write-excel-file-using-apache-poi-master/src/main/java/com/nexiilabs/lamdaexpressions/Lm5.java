@@ -1,4 +1,4 @@
-package com.nexiilabs.sample;
+package com.nexiilabs.lamdaexpressions;
 
 interface Addable{  
     int add(int a,int b);  

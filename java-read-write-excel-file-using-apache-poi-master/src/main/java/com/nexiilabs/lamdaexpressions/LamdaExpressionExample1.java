@@ -1,4 +1,4 @@
-package com.nexiilabs.sample;
+package com.nexiilabs.lamdaexpressions;
 
 public class LamdaExpressionExample1 {
 	public static void main(String[] args) {

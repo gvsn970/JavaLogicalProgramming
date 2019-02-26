@@ -1,4 +1,4 @@
-package com.nexiilabs.strems;
+package com.nexiilabs.streams;
 
 import java.util.ArrayList;
 import java.util.List;
