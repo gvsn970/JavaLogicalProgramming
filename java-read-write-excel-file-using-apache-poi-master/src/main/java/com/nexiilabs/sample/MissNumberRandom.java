@@ -19,13 +19,10 @@ public class MissNumberRandom {
 		int temp = 0;
 		for (int i = 0; i < len; i++) {
 			temp = a[i] - a[i + 1];
-
 			if (temp == -2) {
 				System.out.println("The Missing Number is:"+(a[i]+1));
 				break;
-
 			}
-
 		}
 
 	}
