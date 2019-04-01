@@ -7,7 +7,7 @@ public class RevesreNumber {
 		int temp=num;
 		int rev=0;
 		int count=1;
-		System.err.println("GIven Number:"+num);
+		
 		while(num!=0){
 			int digit=num%10;
 		
