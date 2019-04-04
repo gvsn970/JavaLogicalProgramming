@@ -1,7 +1,11 @@
 package com.nexiilabs.sample;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.Calendar;
+import java.util.Date;
+
+import org.apache.poi.util.SystemOutLogger;
 
 public class WorikngDays {
 
@@ -32,5 +36,11 @@ public class WorikngDays {
 				System.out.println("Worikng Day Mon To Fri");
 			}
 		}
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = new Date();
+		System.out.println(sdf.format(date));
+		
+		System.out.println("After 10 days : "+sdf.format(date)+10);
 	}
 }
