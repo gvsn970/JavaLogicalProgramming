@@ -16,6 +16,8 @@ import java.util.List;
  */
 
 public class ExcelWriter {
+	  public static final String SAMPLE_XLS_FILE_PATH = "./sample-xls-file.xls";
+	   public static final String SAMPLE_XLSX_FILE_PATH = "./sample-xlsx-file.xlsx";
 
     private static String[] columns = {"Name", "Email", "Date Of Birth", "Salary"};
 
@@ -97,7 +99,7 @@ public class ExcelWriter {
         }
 
         // Write the output to a file
-        FileOutputStream fileOut = new FileOutputStream("poi-generated-file.xlsx");
+        FileOutputStream fileOut = new FileOutputStream(SAMPLE_XLS_FILE_PATH);
         workbook.write(fileOut);
         fileOut.close();
 
