@@ -16,7 +16,7 @@ public class FindEmpBasedOnFilerWihSalaries {
 
 	        // Use Java streams to filter employees with salaries greater than 5000
 	        List<Employee> highPaidEmployees = employees.stream()
-	                .filter(employee -> employee.getSalary() > 5000)
+	                .filter(employee -> employee.getSalary() > 5000).sorted((e1,e2)->e2.getName().compareTo(e1.getName()))
 	                .collect(Collectors.toList());
 
 	        // Print the filtered employees
@@ -25,5 +25,7 @@ public class FindEmpBasedOnFilerWihSalaries {
 	            System.out.println("Name: " + employee.getName() + ", Salary: " + employee.getSalary());
 	        }
 
+//	        List<Employee> highPaidEmploys=employees.stream().sorted((e1,e2)->(int)(e2.getSalary()-e1.getSalary())).collect(Collectors.toList());
+//	        System.err.println(highPaidEmploys);
 	}
 }
