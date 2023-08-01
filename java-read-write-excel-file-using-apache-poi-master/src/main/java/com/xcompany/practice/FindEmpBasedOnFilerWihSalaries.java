@@ -2,6 +2,7 @@ package com.xcompany.practice;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class FindEmpBasedOnFilerWihSalaries {
@@ -27,5 +28,11 @@ public class FindEmpBasedOnFilerWihSalaries {
 
 //	        List<Employee> highPaidEmploys=employees.stream().sorted((e1,e2)->(int)(e2.getSalary()-e1.getSalary())).collect(Collectors.toList());
 //	        System.err.println(highPaidEmploys);
+	        
+	        Map<Integer, List<Employee>> personsByAge = employees.stream()
+	                .collect(Collectors.groupingBy(Employee::getAge));
+
+	        // Print the result
+	        personsByAge.forEach((age, people) -> System.out.println("Age " + age + ": " + people));
 	}
 }
