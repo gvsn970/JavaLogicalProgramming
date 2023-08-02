@@ -12,6 +12,10 @@ public class StringOccurencesINStream {
         System.out.println(a +b);
         System.out.println(str + b);
         
+        String str1 = "geeksforgeeks";
+        char c = 'e';
+       int i= (int) str1.chars().filter(s->s == c).count();
+       System.err.println(i);
         
         String[] s = {"abc", "ab", "cd", "ab", "abc"};
 //		Arrays.stream(s)
